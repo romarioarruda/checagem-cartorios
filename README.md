@@ -28,3 +28,6 @@ Para este desafio, usei apenas:
 - sweetAlert, documentacao: https://sweetalert.js.org/guides/
 - Mysql
 - Apache server
+
+# Estrutura
+- Construi a aplicaçao baseado em MVC
