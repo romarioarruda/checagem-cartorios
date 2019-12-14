@@ -1,5 +1,5 @@
 <?php
-require_once '../vendor/autoload.php';
+require_once './vendor/autoload.php';
 require_once 'autoload.php';
 
 Flight::route('/', function(){
@@ -22,11 +22,18 @@ Flight::route('POST /atualizar', function(){
     }
 });
 
-Flight::route('POST /salvar-contatos', function(){
+Flight::route('POST /atualizar-dados', function(){
     $dados = Flight::request()->data;
 
     $cartorio = new Cartorio($dados);
-    $cartorio->salvarContatos();
+    $cartorio->atualizarDados();
+});
+
+Flight::route('POST /salvar-cartorio', function(){
+    $dados = Flight::request()->data;
+
+    $cartorio = new Cartorio($dados);
+    $cartorio->salvarCartorio();
 });
 
 Flight::route('POST /deletar-cartorio', function(){

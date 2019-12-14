@@ -1,12 +1,12 @@
 $(function() {
     $('.btn-check').click(function() {
-        swal("Cole aqui o link do XML:", {
+        swal("Cole o link XML do cliente CNJ\n\nhttp://localhost/desafio-p21-sistemas/cartorios-cnj.xml", {
             content: "input",
             buttons: "Processar",
           })
           .then((value) => {
             swal({ buttons: false, text: 'Processando...'});
-            $.post('http://localhost:8081/desafio-p21-sistemas/atualizar', {url: value})
+            $.post('http://localhost:80/desafio-p21-sistemas/atualizar', {url: value})
             .then((result) => {
                 if (result) {
                     sweetAlert('Sucesso!', 'Os dados do XML foram carregados.', 'success')
@@ -33,7 +33,7 @@ $(function() {
           .then((willDelete) => {
             if (willDelete) {
               swal({ buttons: false, text: 'Processando...'});
-              $.post('http://localhost:8081/desafio-p21-sistemas/deletar-cartorio', {id: id})
+              $.post('http://localhost:80/desafio-p21-sistemas/deletar-cartorio', {id: id})
               .then((data) =>{
                 if (data == 'apagado') {
                     swal("Sucesso! Os dados foram deletados.", {

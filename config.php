@@ -2,7 +2,7 @@
 
 try {
     global $conexaoPdo;
-    $conexaoPdo = new PDO("mysql:dbname=cartorios;host=localhost;charset=utf8", "root", "");
+    $conexaoPdo = new PDO("mysql:dbname=cartorios;host=localhost;charset=utf8", "root", "root");
 } catch (Throwable $exception) {
     echo '<br/>PATH DO ARQUIVO: '.$exception->getFile().'::'.$exception->getLine();
     echo '<br/>MENSAGEM: '.$exception->getMessage();
