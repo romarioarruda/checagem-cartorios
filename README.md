@@ -1,17 +1,17 @@
-# Objetivo do desafio-p21-sistemas
+# Objetivo
 
-O objetivo do sistema é facilitar o trabalho da funcionaria quando for necessario atualizar os cartorios.
+O objetivo do sistema é facilitar o trabalho da funcionária quando for necessário atualizar os cartórios.
 
-Para impedir o trabalho repetitivo, basta clicar no botao "Checar xml" e inserir o link xml do cliente no campo
+Para impedir o excesso de trabalho repetitivo, basta clicar no botão "Checar xml" e inserir o link xml do cliente no campo
 e processar a varredura.
 
-O sistema vai varrer os dados do xml e salvar todos os valores necessarios no banco de dados.
+O sistema vai varrer os dados do xml e salvar todos os valores necessários no banco de dados.
 
 Logo em seguida, vai listar todos os dados salvos.
 
-A partir desse momento ja sera possivel atualizar e excluir todos os dados.
+A partir desse momento já será possível atualizar e excluir todos os dados.
 
-Também sera possivel cadastrar um novo dado se necessario for.
+Também sera possível cadastrar um novo dado se necessário for.
 
 O Sistema também disponibiliza de um campo para filtrar dados.
 
@@ -19,15 +19,15 @@ O Sistema também disponibiliza de um campo para filtrar dados.
 
 Para este desafio, usei apenas:
 
-- PHP orientado a objetos
-- Um micro-framework extensivel para PHP chamado Flight, documentaçao: http://flightphp.com/
+- PHP orientado à objetos
+- Um micro-framework extensivel para PHP chamado Flight, documentação: http://flightphp.com/
    - Usei para facilitar o roteamento.
    
-- Composer para gerenciar as dependencias.
+- Composer para gerenciar as dependências.
 - Bootstrap e Jquery
-- sweetAlert, documentacao: https://sweetalert.js.org/guides/
+- sweetAlert, documentação: https://sweetalert.js.org/guides/
 - Mysql
 - Apache server
 
 # Estrutura
-- Construi a aplicaçao baseado em MVC
+- Construí a aplicação baseado em MVC
