@@ -18,7 +18,7 @@ O Sistema também disponibiliza de um campo para filtrar dados.
 # Tecnologias usadas
 
 - PHP orientado à objetos
-- Flight, documentação: http://flightphp.com/
+- Flight PHP, documentação: http://flightphp.com/
 - Composer
 - Bootstrap e Jquery
 - sweetAlert, documentação: https://sweetalert.js.org/guides/
